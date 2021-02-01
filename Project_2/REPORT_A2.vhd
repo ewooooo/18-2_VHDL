@@ -1,0 +1,27 @@
+-- 201512285, Nam EunWoo
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY REPORT_A2 IS
+	PORT(X : in std_logic_vector(3 downto 0);
+	Y : out std_logic_vector(6 downto 0));
+END REPORT_A2;
+
+ARCHITECTURE dataflow Of REPORT_A2 IS
+BEGIN 
+	PROCESS(X)
+	BEGIN
+	IF X = "0000" THEN Y <= "1111110";
+	ELSIF X = "0001" THEN Y <= "0110000";
+	ELSIF X = "0010" THEN Y <= "1101101";
+	ELSIF X = "0011" THEN Y <= "1111001";
+	ELSIF X = "0100" THEN Y <= "0110011";
+	ELSIF X = "0101" THEN Y <= "1011011";
+	ELSIF X = "0110" THEN Y <= "1011111";
+	ELSIF X = "0111" THEN Y <= "1110010";
+	ELSIF X = "1000" THEN Y <= "1111111";
+	ELSIF X = "1001" THEN Y <= "1111011";
+	ElSE Y <= "0000000";
+	END IF;
+	END PROCESS;
+END dataflow;
