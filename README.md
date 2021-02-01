@@ -11,7 +11,7 @@
 ## 2. 세븐세그먼트 디코더 구현
 ![project2](README/2.png)
 
-![project2_1](README/2_1.pNG)
+![project2_1](README/2_1.png)
 
 ---
 
